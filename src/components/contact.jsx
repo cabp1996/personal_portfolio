@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 
 export const Contact = () => {
 
-  const imageOverlay = "../../assets/img/earth.jpg";
+  const imageOverlay = process.env.PUBLIC_URL + "/assets/img/earth.jpg";
   const [successEmail, setSuccessEmail] = useState(false);
   const [error, setError] = useState(null);
 

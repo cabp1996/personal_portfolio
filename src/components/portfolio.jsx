@@ -7,28 +7,28 @@ class Portfolio extends React.Component {
 
   render() {
 
-    const ccit_web_1 = "../../assets/img/ccit_web/login.png";
-    const ccit_web_2 = "../../assets/img/ccit_web/ccit_web_2.png";
-    const ccit_web_3 = "../../assets/img/ccit_web/ccit_web_3.png";
-    const ccit_web_4 = "../../assets/img/ccit_web/ccit_web_4.jpg";
-    const ccit_web_5 = "../../assets/img/ccit_web/ccit_web_5.jpg";
-    const ccit_web_6 = "../../assets/img/ccit_web/ccit_web_6.jpg";
-    const ccit_web_7 = "../../assets/img/ccit_web/ccit_web_7.jpg";
-    const ccit_mobile_1 = "../../assets/img/ccit_mobile/ccit_mobile_1.jpg";
-    const ccit_mobile_2 = "../../assets/img/ccit_mobile/ccit_mobile_2.jpg";
-    const ccit_mobile_3 = "../../assets/img/ccit_mobile/ccit_mobile_3.jpg";
-    const ccit_mobile_4 = "../../assets/img/ccit_mobile/ccit_mobile_4.jpg";
-    const ccit_mobile_5 = "../../assets/img/ccit_mobile/ccit_mobile_5.jpg";
-    const ccit_mobile_6 = "../../assets/img/ccit_mobile/ccit_mobile_6.jpg";
-    const ccit_mobile_7 = "../../assets/img/ccit_mobile/ccit_mobile_7.jpg";
-    const sma_1 = "../../assets/img/sma/sma_1.jpg";
-    const sma_2 = "../../assets/img/sma/sma_2.jpg";
-    const sma_3 = "../../assets/img/sma/sma_3.jpg";
-    const sma_4 = "../../assets/img/sma/sma_4.jpg";
-    const sma_5 = "../../assets/img/sma/sma_5.jpg";
-    const sma_6 = "../../assets/img/sma/sma_6.jpg";
-    const sma_7 = "../../assets/img/sma/sma_7.jpg";
-    const sma_8 = "../../assets/img/sma/sma_8.jpg";
+    const ccit_web_1 = process.env.PUBLIC_URL + "/assets/img/ccit_web/login.png";
+    const ccit_web_2 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_2.png";
+    const ccit_web_3 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_3.png";
+    const ccit_web_4 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_4.jpg";
+    const ccit_web_5 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_5.jpg";
+    const ccit_web_6 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_6.jpg";
+    const ccit_web_7 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_7.jpg";
+    const ccit_mobile_1 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_1.jpg";
+    const ccit_mobile_2 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_2.jpg";
+    const ccit_mobile_3 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_3.jpg";
+    const ccit_mobile_4 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_4.jpg";
+    const ccit_mobile_5 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_5.jpg";
+    const ccit_mobile_6 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_6.jpg";
+    const ccit_mobile_7 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_7.jpg";
+    const sma_1 = process.env.PUBLIC_URL + "/assets/img/sma/sma_1.jpg";
+    const sma_2 = process.env.PUBLIC_URL + "/assets/img/sma/sma_2.jpg";
+    const sma_3 = process.env.PUBLIC_URL + "/assets/img/sma/sma_3.jpg";
+    const sma_4 = process.env.PUBLIC_URL + "/assets/img/sma/sma_4.jpg";
+    const sma_5 = process.env.PUBLIC_URL + "/assets/img/sma/sma_5.jpg";
+    const sma_6 = process.env.PUBLIC_URL + "/assets/img/sma/sma_6.jpg";
+    const sma_7 = process.env.PUBLIC_URL + "/assets/img/sma/sma_7.jpg";
+    const sma_8 = process.env.PUBLIC_URL + "/assets/img/sma/sma_8.jpg";
 
 
 

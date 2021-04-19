@@ -1,8 +1,8 @@
 import React from "react";
 import $ from "jquery";
 
-const logo1 = "../../assets/img/male1.png";
-const logo2 = "../../assets/img/male.png";
+const logo1 = process.env.PUBLIC_URL+"/assets/img/male1.png";
+const logo2 = process.env.PUBLIC_URL+"/assets/img/male.png";
 class Navbar extends React.Component {
 
   constructor() {

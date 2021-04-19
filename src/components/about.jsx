@@ -32,7 +32,7 @@ class About extends React.Component {
             "Apps. I work with cutting-edge technologies to develop Web and Mobile Applications. I’m " +
             "interested in areas of Software Architecture and Software UX."
         },
-        
+
         {
           id: "second-p-about",
           content:
@@ -44,7 +44,7 @@ class About extends React.Component {
   }
 
   render() {
-    const myImage = "../../assets/img/myImage.png";
+    const myImage = process.env.PUBLIC_URL + "/assets/img/myImage.png";
     return (
       <section id="about" className="about-mf sect-pt4 route">
         <div className="container">
