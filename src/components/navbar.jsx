@@ -1,11 +1,12 @@
 import React from "react";
 import $ from "jquery";
 
-import logo1 from "../img/male1.png";
-import logo2 from "../img/male.png";
-
+const logo1 = "../../assets/img/male1.png";
+const logo2 = "../../assets/img/male.png";
 class Navbar extends React.Component {
+
   constructor() {
+      
     super();
     this.state = {
       logo: logo1
@@ -13,6 +14,7 @@ class Navbar extends React.Component {
   }
 
   componentDidMount() {
+
     const nav = $("nav");
     let navHeight = nav.outerHeight();
 
@@ -80,6 +82,8 @@ class Navbar extends React.Component {
   }
 
   render() {
+
+
     return (
       <nav
         className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"

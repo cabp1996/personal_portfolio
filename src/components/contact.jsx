@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
-import imageOverlay from "../img/earth.jpg";
+
 
 
 export const Contact = () => {
 
+  const imageOverlay = "../../assets/img/earth.jpg";
   const [successEmail, setSuccessEmail] = useState(false);
   const [error, setError] = useState(null);
 

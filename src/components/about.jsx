@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../img/myImage.png";
+
 
 class About extends React.Component {
   constructor() {
@@ -44,6 +44,7 @@ class About extends React.Component {
   }
 
   render() {
+    const myImage = "../../assets/img/myImage.png";
     return (
       <section id="about" className="about-mf sect-pt4 route">
         <div className="container">

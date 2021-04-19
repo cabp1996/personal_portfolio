@@ -1,32 +1,38 @@
 import React from "react";
 
-//import stock
-import ccit_web_1 from "../img/ccit_web/login.png";
-import ccit_web_2 from "../img/ccit_web/ccit_web_2.png";
-import ccit_web_3 from "../img/ccit_web/ccit_web_3.png";
-import ccit_web_4 from "../img/ccit_web/ccit_web_4.jpg";
-import ccit_web_5 from "../img/ccit_web/ccit_web_5.jpg";
-import ccit_web_6 from "../img/ccit_web/ccit_web_6.jpg";
-import ccit_web_7 from "../img/ccit_web/ccit_web_7.jpg";
-import ccit_mobile_1 from "../img/ccit_mobile/ccit_mobile_1.jpg";
-import ccit_mobile_2 from "../img/ccit_mobile/ccit_mobile_2.jpg";
-import ccit_mobile_3 from "../img/ccit_mobile/ccit_mobile_3.jpg";
-import ccit_mobile_4 from "../img/ccit_mobile/ccit_mobile_4.jpg";
-import ccit_mobile_5 from "../img/ccit_mobile/ccit_mobile_5.jpg";
-import ccit_mobile_6 from "../img/ccit_mobile/ccit_mobile_6.jpg";
-import ccit_mobile_7 from "../img/ccit_mobile/ccit_mobile_7.jpg";
-import sma_1 from "../img/sma/sma_1.jpg";
-import sma_2 from "../img/sma/sma_2.jpg";
-import sma_3 from "../img/sma/sma_3.jpg";
-import sma_4 from "../img/sma/sma_4.jpg";
-import sma_5 from "../img/sma/sma_5.jpg";
-import sma_6 from "../img/sma/sma_6.jpg";
-import sma_7 from "../img/sma/sma_7.jpg";
-import sma_8 from "../img/sma/sma_8.jpg";
+
 
 
 class Portfolio extends React.Component {
+
   render() {
+
+    const ccit_web_1 = "../../assets/img/ccit_web/login.png";
+    const ccit_web_2 = "../../assets/img/ccit_web/ccit_web_2.png";
+    const ccit_web_3 = "../../assets/img/ccit_web/ccit_web_3.png";
+    const ccit_web_4 = "../../assets/img/ccit_web/ccit_web_4.jpg";
+    const ccit_web_5 = "../../assets/img/ccit_web/ccit_web_5.jpg";
+    const ccit_web_6 = "../../assets/img/ccit_web/ccit_web_6.jpg";
+    const ccit_web_7 = "../../assets/img/ccit_web/ccit_web_7.jpg";
+    const ccit_mobile_1 = "../../assets/img/ccit_mobile/ccit_mobile_1.jpg";
+    const ccit_mobile_2 = "../../assets/img/ccit_mobile/ccit_mobile_2.jpg";
+    const ccit_mobile_3 = "../../assets/img/ccit_mobile/ccit_mobile_3.jpg";
+    const ccit_mobile_4 = "../../assets/img/ccit_mobile/ccit_mobile_4.jpg";
+    const ccit_mobile_5 = "../../assets/img/ccit_mobile/ccit_mobile_5.jpg";
+    const ccit_mobile_6 = "../../assets/img/ccit_mobile/ccit_mobile_6.jpg";
+    const ccit_mobile_7 = "../../assets/img/ccit_mobile/ccit_mobile_7.jpg";
+    const sma_1 = "../../assets/img/sma/sma_1.jpg";
+    const sma_2 = "../../assets/img/sma/sma_2.jpg";
+    const sma_3 = "../../assets/img/sma/sma_3.jpg";
+    const sma_4 = "../../assets/img/sma/sma_4.jpg";
+    const sma_5 = "../../assets/img/sma/sma_5.jpg";
+    const sma_6 = "../../assets/img/sma/sma_6.jpg";
+    const sma_7 = "../../assets/img/sma/sma_7.jpg";
+    const sma_8 = "../../assets/img/sma/sma_8.jpg";
+
+
+
+
     return (
       <section id="work" className="portfolio-mf sect-pt4 route">
         <div className="container">
