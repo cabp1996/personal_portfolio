@@ -1,28 +1,68 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
-
-
+import validator from 'validator';
+import { useForm } from "../hookz/useForm";
 
 export const Contact = () => {
 
   const imageOverlay = process.env.PUBLIC_URL + "/assets/img/earth.jpg";
   const [successEmail, setSuccessEmail] = useState(false);
-  const [error, setError] = useState(null);
+  const [sendEmailError, setSendEmailError] = useState(null);
+
+  const [{ name, email, subject, message },
+    {
+      nameError,
+      emailError,
+      subjectError,
+      messageError
+    },
+    handleInputChange, reset,
+    setErrors] = useForm({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    }, {
+      nameError: null,
+      emailError: null,
+      subjectError: null,
+      messageError: null
+    });
+
 
   const sendEmail = (e) => {
     e.preventDefault();
+    let errors = {};
 
+    if (name.length == 0) {
+      errors['nameError'] = "Complete the field";
+    }
+
+    if (!validator.isEmail(email)) {
+      errors['emailError'] = "Complete the field with a valid email";
+    }
+
+    if (subject.length == 0) {
+      errors['subjectError'] = "Complete the field";
+    }
+
+    if (message.length == 0) {
+      errors['messageError'] = "Complete the field";
+    }
+
+    if (Object.values(errors).length > 0) {
+      setErrors(errors);
+      return;
+    }
     emailjs.sendForm('service_4ae4ysa', 'template_ct8m1eu', e.target, 'user_p7tdXWYCbfAlH1TgyDnzH')
       .then((result) => {
-        // console.log(result.text);
-
-
         setSuccessEmail(true);
       }, (error) => {
-        //console.log(error.text);
-        setError(error.text);
+        setSendEmailError(error.text);
       });
-    e.target.reset();
+
+    setErrors({});
+    reset();
   }
 
   return (
@@ -46,8 +86,6 @@ export const Contact = () => {
                         onSubmit={sendEmail}
                         className="contactForm"
                       >
-
-
                         <div id="errormessage"></div>
                         <div className="row">
                           <div className="col-md-12 mb-3">
@@ -55,13 +93,19 @@ export const Contact = () => {
                               <input
                                 type="text"
                                 name="name"
+                                value={name}
+                                onChange={handleInputChange}
                                 className="form-control"
                                 id="name"
                                 placeholder="Your Name"
-                                data-rule="minlen:4"
-                                data-msg="Please enter at least 4 chars"
+
                               />
-                              <div className="validation"></div>
+                              {
+                                nameError && (<div className="validation">
+                                  {nameError}
+                                </div>)
+                              }
+
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -70,12 +114,17 @@ export const Contact = () => {
                                 type="email"
                                 className="form-control"
                                 name="email"
+                                value={email}
+                                onChange={handleInputChange}
                                 id="email"
                                 placeholder="Your Email"
-                                data-rule="email"
-                                data-msg="Please enter a valid email"
+
                               />
-                              <div className="validation"></div>
+                              {
+                                emailError && (<div className="validation">
+                                  {emailError}
+                                </div>)
+                              }
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -84,12 +133,17 @@ export const Contact = () => {
                                 type="text"
                                 className="form-control"
                                 name="subject"
+                                value={subject}
+                                onChange={handleInputChange}
                                 id="subject"
                                 placeholder="Subject"
-                                data-rule="minlen:4"
-                                data-msg="Please enter at least 8 chars of subject"
+
                               />
-                              <div className="validation"></div>
+                              {
+                                subjectError && (<div className="validation">
+                                  {subjectError}
+                                </div>)
+                              }
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -97,12 +151,18 @@ export const Contact = () => {
                               <textarea
                                 className="form-control"
                                 name="message"
+                                value={message}
+                                onChange={handleInputChange}
                                 rows="5"
                                 data-rule="required"
                                 data-msg="Please write something for us"
                                 placeholder="Message"
                               ></textarea>
-                              <div className="validation"></div>
+                              {
+                                messageError && (<div className="validation">
+                                  {messageError}
+                                </div>)
+                              }
                             </div>
                           </div>
                           <div className="col-md-12">
@@ -113,7 +173,7 @@ export const Contact = () => {
                             }
 
                             {
-                              error && <div className="text-danger">
+                              sendEmailError && <div className="text-danger">
                                 There has been a problem sending your email, please try again.
                         </div>
                             }
