@@ -208,20 +208,10 @@ export const Contact = () => {
                     </div>
                     <div className="socials">
                       <ul>
+
                         <li>
                           <a
-                            href=""
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="ico-circle">
-                              <i className="ion-social-codepen"></i>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href=""
+                            href="https://github.com/cabp1996"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
