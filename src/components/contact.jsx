@@ -7,9 +7,6 @@ const imageOverlay = process.env.PUBLIC_URL + "/assets/img/earth.jpg";
 
 export const Contact = () => {
 
-  console.log('cambio');
-
-
   const [successEmail, setSuccessEmail] = useState(false);
   const [sendEmailError, setSendEmailError] = useState(null);
 
