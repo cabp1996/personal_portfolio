@@ -3,9 +3,13 @@ import emailjs from 'emailjs-com';
 import validator from 'validator';
 import { useForm } from "../hookz/useForm";
 
+const imageOverlay = process.env.PUBLIC_URL + "/assets/img/earth.jpg";
+
 export const Contact = () => {
 
-  const imageOverlay = process.env.PUBLIC_URL + "/assets/img/earth.jpg";
+  console.log('cambio');
+
+
   const [successEmail, setSuccessEmail] = useState(false);
   const [sendEmailError, setSendEmailError] = useState(null);
 
@@ -181,7 +185,8 @@ export const Contact = () => {
                               type="submit"
                               className="button button-a button-big button-rouded"
                             >
-                              Send Message
+                              <i className="ion-android-send"></i> &nbsp;
+                                Send Message
                             </button>
                           </div>
                         </div>
@@ -190,24 +195,36 @@ export const Contact = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="title-box-2 pt-4 pt-md-0">
-                      <h5 className="title-left">Get in Touch</h5>
+                      <h5 className="title-left">Contact me</h5>
                     </div>
                     <div className="more-info">
                       <p className="lead">
-                        Whether you want to get in touch, talk about a project
-                        collaboration, or just say hi, I'd love to hear from
-                        you.
-                        <br />
-                        Simply fill the from and send me an email.
+                        If you'd like to contact me, please fill the form and send me an email. 
+                        <br/>
+                        Here there some extra information about me:
+                        
                       </p>
-                      {/* <!-- <ul class="list-ico">
-                              <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                              <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                              <li><span class="ion-email"></span> contact@example.com</li>
-                              </ul> --> */}
+                      <ul class="list-ico">
+                        <li><span class="ion-ios-location"></span> Quito, Ecuador</li>
+                        {/* <li><span class="ion-ios-telephone"></span> celular</li>
+                              <li><span class="ion-email"></span> email</li> */}
+                      </ul>
                     </div>
                     <div className="socials">
                       <ul>
+
+
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/in/cesar-andres-balcazar-pazmino-39b390205"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span className="ico-circle">
+                              <i className="ion-social-linkedin"></i>
+                            </span>
+                          </a>
+                        </li>
 
                         <li>
                           <a
@@ -217,17 +234,6 @@ export const Contact = () => {
                           >
                             <span className="ico-circle">
                               <i className="ion-social-github"></i>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.linkedin.com/in/cesar-andres-balcazar-pazmino-39b390205"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="ico-circle">
-                              <i className="ion-social-linkedin"></i>
                             </span>
                           </a>
                         </li>

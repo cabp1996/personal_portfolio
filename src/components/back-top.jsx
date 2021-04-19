@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import '../libs/easing.js'
 
-class BackToTop extends React.Component {
+export class BackToTop extends React.Component {
     componentDidMount(){
         $('.back-to-top').click(function(){
             $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
@@ -25,6 +25,5 @@ class BackToTop extends React.Component {
     }
 }
 
-export default BackToTop;
 
 

@@ -1,17 +1,8 @@
 import React from "react";
 import $ from "jquery";
 
-const logo1 = process.env.PUBLIC_URL+"/assets/img/male1.png";
-const logo2 = process.env.PUBLIC_URL+"/assets/img/male.png";
-class Navbar extends React.Component {
 
-  constructor() {
-      
-    super();
-    this.state = {
-      logo: logo1
-    };
-  }
+export class Navbar extends React.Component {
 
   componentDidMount() {
 
@@ -41,7 +32,7 @@ class Navbar extends React.Component {
         document
           .querySelector(".navbar-expand-md")
           .classList.remove("navbar-trans");
-        this.setState({ logo: logo2 });
+       
       } else {
         document
           .querySelector(".navbar-expand-md")
@@ -49,7 +40,6 @@ class Navbar extends React.Component {
         document
           .querySelector(".navbar-expand-md")
           .classList.remove("navbar-reduce");
-        this.setState({ logo: logo1 });
       }
     });
 
@@ -91,11 +81,11 @@ class Navbar extends React.Component {
       >
         <div className="container">
           <a className="navbar-brand js-scroll" href="#page-top">
-            <img
+            {/* <img
               src={this.state.logo}
               alt="logo"
               style={{ maxWidth: "100px" }}
-            />
+            /> */}
           </a>
           <button
             className="navbar-toggler collapsed"
@@ -144,4 +134,3 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;

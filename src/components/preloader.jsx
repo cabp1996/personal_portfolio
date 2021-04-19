@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 
-class Preloader extends React.Component {
+export class Preloader extends React.Component {
     componentDidMount(){
         $(window).on('load', function () {
             if ($('#preloader').length) {
@@ -16,8 +16,5 @@ class Preloader extends React.Component {
         return <div id="preloader"></div>;
     }
 }
-
-export default Preloader;
-
 
 

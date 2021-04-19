@@ -1,488 +1,162 @@
 import React from "react";
+import { PortfolioItem } from "./portfolioItem";
 
+const ccit_web_1 = process.env.PUBLIC_URL + "/assets/img/ccit_web/login.png";
+const ccit_web_2 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_2.png";
+const ccit_web_3 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_3.png";
+const ccit_web_4 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_4.jpg";
+const ccit_web_5 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_5.jpg";
+const ccit_web_6 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_6.jpg";
+const ccit_web_7 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_7.jpg";
+const ccit_mobile_1 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_1.jpg";
+const ccit_mobile_2 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_2.jpg";
+const ccit_mobile_3 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_3.jpg";
+const ccit_mobile_4 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_4.jpg";
+const ccit_mobile_5 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_5.jpg";
+const ccit_mobile_6 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_6.jpg";
+const ccit_mobile_7 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_7.jpg";
+const sma_1 = process.env.PUBLIC_URL + "/assets/img/sma/sma_1.jpg";
+const sma_2 = process.env.PUBLIC_URL + "/assets/img/sma/sma_2.jpg";
+const sma_3 = process.env.PUBLIC_URL + "/assets/img/sma/sma_3.jpg";
+const sma_4 = process.env.PUBLIC_URL + "/assets/img/sma/sma_4.jpg";
+const sma_5 = process.env.PUBLIC_URL + "/assets/img/sma/sma_5.jpg";
+const sma_6 = process.env.PUBLIC_URL + "/assets/img/sma/sma_6.jpg";
+const sma_7 = process.env.PUBLIC_URL + "/assets/img/sma/sma_7.jpg";
+const sma_8 = process.env.PUBLIC_URL + "/assets/img/sma/sma_8.jpg";
+const chat_1 = process.env.PUBLIC_URL + "/assets/img/chat/chat_1.jpg";
+const chat_2 = process.env.PUBLIC_URL + "/assets/img/chat/chat_2.jpg";
+const bot_1 = process.env.PUBLIC_URL + "/assets/img/bot/bot_1.jpeg";
+const bot_2 = process.env.PUBLIC_URL + "/assets/img/bot/bot_2.jpeg";
+const bot_3 = process.env.PUBLIC_URL + "/assets/img/bot/bot_3.jpeg";
+const bot_4 = process.env.PUBLIC_URL + "/assets/img/bot/bot_4.jpeg";
+const bot_5 = process.env.PUBLIC_URL + "/assets/img/bot/bot_5.jpeg";
 
+export const Portfolio = () => {
 
+  return (
+    <section id="work" className="portfolio-mf sect-pt4 route">
+      <div className="container">
 
-class Portfolio extends React.Component {
-
-  render() {
-
-    const ccit_web_1 = process.env.PUBLIC_URL + "/assets/img/ccit_web/login.png";
-    const ccit_web_2 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_2.png";
-    const ccit_web_3 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_3.png";
-    const ccit_web_4 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_4.jpg";
-    const ccit_web_5 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_5.jpg";
-    const ccit_web_6 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_6.jpg";
-    const ccit_web_7 = process.env.PUBLIC_URL + "/assets/img/ccit_web/ccit_web_7.jpg";
-    const ccit_mobile_1 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_1.jpg";
-    const ccit_mobile_2 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_2.jpg";
-    const ccit_mobile_3 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_3.jpg";
-    const ccit_mobile_4 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_4.jpg";
-    const ccit_mobile_5 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_5.jpg";
-    const ccit_mobile_6 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_6.jpg";
-    const ccit_mobile_7 = process.env.PUBLIC_URL + "/assets/img/ccit_mobile/ccit_mobile_7.jpg";
-    const sma_1 = process.env.PUBLIC_URL + "/assets/img/sma/sma_1.jpg";
-    const sma_2 = process.env.PUBLIC_URL + "/assets/img/sma/sma_2.jpg";
-    const sma_3 = process.env.PUBLIC_URL + "/assets/img/sma/sma_3.jpg";
-    const sma_4 = process.env.PUBLIC_URL + "/assets/img/sma/sma_4.jpg";
-    const sma_5 = process.env.PUBLIC_URL + "/assets/img/sma/sma_5.jpg";
-    const sma_6 = process.env.PUBLIC_URL + "/assets/img/sma/sma_6.jpg";
-    const sma_7 = process.env.PUBLIC_URL + "/assets/img/sma/sma_7.jpg";
-    const sma_8 = process.env.PUBLIC_URL + "/assets/img/sma/sma_8.jpg";
-
-
-
-
-    return (
-      <section id="work" className="portfolio-mf sect-pt4 route">
-        <div className="container">
-
-          {/* TITULO PORTAFOLIO */}
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="title-box text-center">
-                <h3 className="title-a">Portfolio</h3>
-                <p className="subtitle-a">
-                  Here there are projects that I´ve developed in my career with the technologies I worked with to develop them.
+        {/* TITULO PORTAFOLIO */}
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="title-box text-center">
+              <h3 className="title-a">Portfolio</h3>
+              <p className="subtitle-a">
+                Here there are projects that I´ve developed in my career with the technologies I worked with to develop them.
                 </p>
-                <div className="line-mf"></div>
-              </div>
+              <div className="line-mf"></div>
             </div>
-          </div>
-
-          {/* TRABAJOS */}
-          <div className="row">
-
-            {/* CCIT WEB */}
-            <div className="col-md-4">
-
-              <div className="work-box">
-                <a href={ccit_web_1} data-lightbox="gallery-ccit-web">
-                  <div className="work-img">
-                    <img src={ccit_web_1} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Components Inventory Tool - Web</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Application for assets management: Components, Third-Party Softwares, Platforms, Users and Client's Architectures.
-                            </span>
-                        </div>
-                        <span className="text-secondary" style={{fontSize:12}}>
-                          Developed with: 
-                          <br/>
-                          - Flutter 1 Web for Frontend <br/>
-                          - SpringBoot for Backend
-                        </span>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={ccit_web_2}
-                  data-lightbox="gallery-ccit-web"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_web_3}
-                  data-lightbox="gallery-ccit-web"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_web_4}
-                  data-lightbox="gallery-ccit-web"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_web_5}
-                  data-lightbox="gallery-ccit-web"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_web_6}
-                  data-lightbox="gallery-ccit-web"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_web_7}
-                  data-lightbox="gallery-ccit-web"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-
-
-            {/* CCIT MOBIL */}
-            <div className="col-md-4">
-
-              <div className="work-box">
-                <a href={ccit_mobile_1} data-lightbox="gallery-ccit-mobile">
-                  <div className="work-img">
-                    <img src={ccit_mobile_1} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Components Inventory Tool - Mobile</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Mobile application with same funcionality like last one described, but for iOS and Android Platforms.                        </span>
-                        </div>
-                        <span className="text-secondary" style={{fontSize:12}}>
-                          Developed with: 
-                          <br/>
-                          - Flutter 2 Mobile for Frontend <br/>
-                          - SpringBoot for Backend
-                        </span>
-                      
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a
-                  href={ccit_mobile_2}
-                  data-lightbox="gallery-ccit-mobile"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_mobile_3}
-                  data-lightbox="gallery-ccit-mobile"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_mobile_4}
-                  data-lightbox="gallery-ccit-mobile"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_mobile_5}
-                  data-lightbox="gallery-ccit-mobile"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_mobile_6}
-                  data-lightbox="gallery-ccit-mobile"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={ccit_mobile_7}
-                  data-lightbox="gallery-ccit-mobile"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-
-            {/* Sistema TESIS */}
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={sma_1} data-lightbox="gallery-aguadeluz">
-                  <div className="work-img">
-                    <img src={sma_1} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Educational Robotics Learning Monitoring System.</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Web system to monitor learning of students participating in educational robotics workshops.
-                          </span>{" "}
-                        </div>
-                        <span className="text-secondary" style={{fontSize:12}}>
-                          Developed with: 
-                          <br/>
-                          - Angular 7+ for Frontend <br/>
-                          - NestJS for Backend
-                        </span>
-                    
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={sma_2}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={sma_3}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={sma_4}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={sma_5}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={sma_6}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={sma_7}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={sma_8}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-
-
-            {/* <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-medlingos">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Bootstrap ReactJS GoogleAPI
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                 <a
-                  href={stock1}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a> 
-              </div>
-            </div> */}
-            {/* <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-smth">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">MERN</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                 <a
-                  href={stock1}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a> 
-              </div>
-            </div> */}
-            {/* <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap MERN
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-               <a
-                  href={stock1}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a> 
-              </div>
-            </div>
-        
-         */}
-
           </div>
         </div>
-      </section>
-    );
-  }
+
+        {/* TRABAJOS */}
+        <div className="row">
+
+          {/* Sistema TESIS */}
+          <div className="col-md-4">
+
+            <PortfolioItem
+              title={"Educational Robotics Learning Monitoring System."}
+              description={"Web system to monitor learning of students participating in educational robotics workshops."}
+              frontend={"Angular 7+ for Frontend"}
+              backend={"NestJS for Backend"}
+              images={[
+                sma_2,
+                sma_3,
+                sma_4,
+                sma_5,
+                sma_6,
+                sma_7,
+                sma_8
+              ]}
+              cover={sma_1}
+              gallery={"gallery-sma"}
+            />
+          </div>
+
+          {/* BOT */}
+          <div className="col-md-4">
+
+            <PortfolioItem
+              title={"Mobile Transactions Bot"}
+              description={"Application bot for transactions query."}
+              frontend={"Xamarin for Frontend"}
+              backend={"Azure LUIS, Cognitive Services, Direct Line, Speech"}
+              images={[
+                bot_2,
+                bot_3,
+                bot_4,
+                bot_5,
+              ]}
+              cover={bot_1}
+              gallery={"gallery-bot"}
+            />
+          </div>
+
+
+          {/* CCIT WEB */}
+          <div className="col-md-4">
+            <PortfolioItem
+              title={"Components Inventory Tool - Web"}
+              description={"Application for assets management: Components, Third-Party Softwares, Platforms, Users and Client's Architectures."}
+              frontend={"Flutter 1 Web for Frontend"}
+              backend={"SpringBoot for Backend"}
+              images={[
+                ccit_web_2,
+                ccit_web_3,
+                ccit_web_4,
+                ccit_web_5,
+                ccit_web_6,
+                ccit_web_7
+              ]}
+              cover={ccit_web_1}
+              gallery={"gallery-ccit-web"}
+            />
+          </div>
+
+
+          {/* CCIT MOBIL */}
+          <div className="col-md-4">
+            <PortfolioItem
+              title={"Components Inventory Tool - Mobile"}
+              description={"Mobile application with same funcionality like last one described, but for iOS and Android Platforms."}
+              frontend={"Flutter 2 Mobile for Frontend"}
+              backend={"SpringBoot for Backend"}
+              images={[
+                ccit_mobile_2,
+                ccit_mobile_3,
+                ccit_mobile_4,
+                ccit_mobile_5,
+                ccit_mobile_6,
+                ccit_mobile_7
+              ]}
+              cover={ccit_mobile_1}
+              gallery={"gallery-ccit-mobile"}
+            />
+
+          </div>
+
+
+          {/* CHAT */}
+          <div className="col-md-4">
+
+            <PortfolioItem
+              title={"Serverless Custom Chat"}
+              description={"Chat with Gmail and Twitter Login."}
+              frontend={"Angular 7+ AngularFire for Frontend"}
+              backend={"Firebase - Firestore Serverless"}
+              images={[
+                chat_2
+              ]}
+              cover={chat_1}
+              gallery={"gallery-chat"}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Portfolio;
+
