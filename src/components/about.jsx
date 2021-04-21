@@ -23,7 +23,7 @@ export const About = () => {
       {
         id: "Web development",
         content:
-          "Angular 7+, Flutter Web, React, Nest JS, Spring Boot, Express"
+          "Angular 7+, React JS, Flutter Web, Nest JS, Spring Boot, Express"
       },
 
       {
@@ -47,7 +47,7 @@ export const About = () => {
       {
         id: "Cloud Services",
         content:
-          "Azure: Bot Framework - LUIS - Face, Firebase"
+          "Azure: Bot Framework - LUIS - Face, Firebase, Cloudinary"
       },
 
 

@@ -30,6 +30,12 @@ const bot_2 = process.env.PUBLIC_URL + "/assets/img/bot/bot_2.jpeg";
 const bot_3 = process.env.PUBLIC_URL + "/assets/img/bot/bot_3.jpeg";
 const bot_4 = process.env.PUBLIC_URL + "/assets/img/bot/bot_4.jpeg";
 const bot_5 = process.env.PUBLIC_URL + "/assets/img/bot/bot_5.jpeg";
+const res_1 = process.env.PUBLIC_URL + "/assets/img/rest/res_1.jpg";
+const res_2 = process.env.PUBLIC_URL + "/assets/img/rest/res_2.jpg";
+const res_3 = process.env.PUBLIC_URL + "/assets/img/rest/res_3.jpg";
+const res_4 = process.env.PUBLIC_URL + "/assets/img/rest/res_4.jpg";
+const res_5 = process.env.PUBLIC_URL + "/assets/img/rest/res_5.jpg";
+const res_6 = process.env.PUBLIC_URL + "/assets/img/rest/res_6.jpg";
 
 export const Portfolio = () => {
 
@@ -91,6 +97,26 @@ export const Portfolio = () => {
               ]}
               cover={bot_1}
               gallery={"gallery-bot"}
+            />
+          </div>
+
+          {/* res */}
+          <div className="col-md-4">
+
+            <PortfolioItem
+              title={"Custom Restaurant App"}
+              description={"Application to show restaurant's information like dishes and promotions."}
+              frontend={"React JS for Frontend"}
+              backend={"Reacstrap"}
+              images={[
+                res_2,
+                res_3,
+                res_4,
+                res_5,
+                res_6,
+              ]}
+              cover={res_1}
+              gallery={"gallery-res"}
             />
           </div>
 
