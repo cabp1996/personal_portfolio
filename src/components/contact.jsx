@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 import validator from 'validator';
-import { useForm } from "../hookz/useForm";
+import { useForm } from "../hooks/useForm";
 
 const imageOverlay = process.env.PUBLIC_URL + "/assets/img/earth.jpg";
 
