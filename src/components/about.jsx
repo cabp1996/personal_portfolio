@@ -39,6 +39,12 @@ export const About = () => {
       },
 
       {
+        id: "Methodology",
+        content:
+          "Scrum"
+      },
+
+      {
         id: "Version Control",
         content:
           "GIT, TFS"

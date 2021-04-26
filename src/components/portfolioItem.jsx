@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const PortfolioItem = ({title, description, frontend, backend, images, cover, gallery}) => {
+export const PortfolioItem = ({ title, description, frontend, backend, images, cover, gallery }) => {
     return (
         <div className="work-box">
             <a href={cover} data-lightbox={gallery}>
@@ -20,9 +20,12 @@ export const PortfolioItem = ({title, description, frontend, backend, images, co
                                 <strong>
                                     Developed with:
                                 </strong>
-                                <br />
-                                - {frontend} <br />
-                                - {backend}
+
+                                <ul>
+                                    <li> {frontend}</li>
+                                    {backend && <li> {backend}</li>}
+                                </ul>
+
                             </span>
                         </div>
                         <div className="col-sm-2">

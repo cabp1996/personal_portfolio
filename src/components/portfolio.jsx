@@ -36,6 +36,13 @@ const res_3 = process.env.PUBLIC_URL + "/assets/img/rest/res_3.jpg";
 const res_4 = process.env.PUBLIC_URL + "/assets/img/rest/res_4.jpg";
 const res_5 = process.env.PUBLIC_URL + "/assets/img/rest/res_5.jpg";
 const res_6 = process.env.PUBLIC_URL + "/assets/img/rest/res_6.jpg";
+const scrum_1 = process.env.PUBLIC_URL + "/assets/img/scrum/scrum_1.jpg";
+const scrum_2 = process.env.PUBLIC_URL + "/assets/img/scrum/scrum_2.jpg";
+const scrum_3 = process.env.PUBLIC_URL + "/assets/img/scrum/scrum_3.jpg";
+const scrum_4 = process.env.PUBLIC_URL + "/assets/img/scrum/scrum_4.jpg";
+const scrum_5 = process.env.PUBLIC_URL + "/assets/img/scrum/scrum_5.jpg";
+const scrum_6 = process.env.PUBLIC_URL + "/assets/img/scrum/scrum_6.jpg";
+const scrum_7 = process.env.PUBLIC_URL + "/assets/img/scrum/scrum_7.jpg";
 
 export const Portfolio = () => {
 
@@ -100,6 +107,27 @@ export const Portfolio = () => {
             />
           </div>
 
+
+          {/* SCRUM */}
+          <div className="col-md-4">
+
+            <PortfolioItem
+              title={"Scrum Guide"}
+              description={"Project to describe de Scrum Guide of Ken Schwaber y Jeff Sutherland."}
+              frontend={"React JS"}
+              images={[
+                scrum_2,
+                scrum_3,
+                scrum_4,
+                scrum_5,
+                scrum_6,
+                scrum_7
+              ]}
+              cover={scrum_1}
+              gallery={"gallery-scrum"}
+            />
+          </div>
+          
           {/* res */}
           <div className="col-md-4">
 
@@ -119,6 +147,8 @@ export const Portfolio = () => {
               gallery={"gallery-res"}
             />
           </div>
+
+
 
 
           {/* CCIT WEB */}
@@ -163,22 +193,6 @@ export const Portfolio = () => {
 
           </div>
 
-
-          {/* CHAT */}
-          <div className="col-md-4">
-
-            <PortfolioItem
-              title={"Serverless Custom Chat"}
-              description={"Chat with Gmail and Twitter Login."}
-              frontend={"Angular 7+ AngularFire for Frontend"}
-              backend={"Firebase - Firestore Serverless"}
-              images={[
-                chat_2
-              ]}
-              cover={chat_1}
-              gallery={"gallery-chat"}
-            />
-          </div>
         </div>
       </div>
     </section>

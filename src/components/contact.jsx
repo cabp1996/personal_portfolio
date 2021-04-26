@@ -203,14 +203,10 @@ export const Contact = () => {
                       </p>
                       <ul class="list-ico">
                         <li><span class="ion-ios-location"></span> Quito, Ecuador</li>
-                        {/* <li><span class="ion-ios-telephone"></span> celular</li>
-                              <li><span class="ion-email"></span> email</li> */}
                       </ul>
                     </div>
                     <div className="socials">
                       <ul>
-
-
                         <li>
                           <a
                             href="https://www.linkedin.com/in/cesar-andres-balcazar-pazmino-39b390205"
