@@ -32,7 +32,7 @@ export class Navbar extends React.Component {
         document
           .querySelector(".navbar-expand-md")
           .classList.remove("navbar-trans");
-       
+
       } else {
         document
           .querySelector(".navbar-expand-md")
@@ -81,11 +81,6 @@ export class Navbar extends React.Component {
       >
         <div className="container">
           <a className="navbar-brand js-scroll" href="#page-top">
-            {/* <img
-              src={this.state.logo}
-              alt="logo"
-              style={{ maxWidth: "100px" }}
-            /> */}
           </a>
           <button
             className="navbar-toggler collapsed"

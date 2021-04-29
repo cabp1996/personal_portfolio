@@ -35,7 +35,7 @@ export const Contact = () => {
     e.preventDefault();
     let errors = {};
 
-    if (name.length == 0) {
+    if (name.length === 0) {
       errors['nameError'] = "Complete the field";
     }
 
@@ -43,11 +43,11 @@ export const Contact = () => {
       errors['emailError'] = "Complete the field with a valid email";
     }
 
-    if (subject.length == 0) {
+    if (subject.length === 0) {
       errors['subjectError'] = "Complete the field";
     }
 
-    if (message.length == 0) {
+    if (message.length === 0) {
       errors['messageError'] = "Complete the field";
     }
 

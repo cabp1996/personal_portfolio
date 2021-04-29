@@ -23,8 +23,6 @@ const sma_5 = process.env.PUBLIC_URL + "/assets/img/sma/sma_5.jpg";
 const sma_6 = process.env.PUBLIC_URL + "/assets/img/sma/sma_6.jpg";
 const sma_7 = process.env.PUBLIC_URL + "/assets/img/sma/sma_7.jpg";
 const sma_8 = process.env.PUBLIC_URL + "/assets/img/sma/sma_8.jpg";
-const chat_1 = process.env.PUBLIC_URL + "/assets/img/chat/chat_1.jpg";
-const chat_2 = process.env.PUBLIC_URL + "/assets/img/chat/chat_2.jpg";
 const bot_1 = process.env.PUBLIC_URL + "/assets/img/bot/bot_1.jpeg";
 const bot_2 = process.env.PUBLIC_URL + "/assets/img/bot/bot_2.jpeg";
 const bot_3 = process.env.PUBLIC_URL + "/assets/img/bot/bot_3.jpeg";
@@ -67,7 +65,7 @@ export const Portfolio = () => {
         <div className="row">
 
           {/* Sistema TESIS */}
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
 
             <PortfolioItem
               title={"Educational Robotics Learning Monitoring System."}
@@ -89,7 +87,7 @@ export const Portfolio = () => {
           </div>
 
           {/* BOT */}
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
 
             <PortfolioItem
               title={"Mobile Transactions Bot"}
@@ -109,7 +107,7 @@ export const Portfolio = () => {
 
 
           {/* SCRUM */}
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
 
             <PortfolioItem
               title={"Scrum Guide"}
@@ -129,7 +127,7 @@ export const Portfolio = () => {
           </div>
           
           {/* res */}
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
 
             <PortfolioItem
               title={"Custom Restaurant App"}
@@ -152,7 +150,7 @@ export const Portfolio = () => {
 
 
           {/* CCIT WEB */}
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <PortfolioItem
               title={"Components Inventory Tool - Web"}
               description={"Application for assets management: Components, Third-Party Softwares, Platforms, Users and Client's Architectures."}
@@ -173,7 +171,7 @@ export const Portfolio = () => {
 
 
           {/* CCIT MOBIL */}
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <PortfolioItem
               title={"Components Inventory Tool - Mobile"}
               description={"Mobile application with same funcionality like last one described, but for iOS and Android Platforms."}
